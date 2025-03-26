@@ -4,7 +4,6 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 from data_profiling import load_data, generate_summary, visualize_all_columns
-from model_training import preprocess_data, train_model, evaluate_model
 from report_generation import generate_report
 
 def generate_charts(data):
@@ -30,7 +29,9 @@ def main():
     
     st.title("Data Profiling Application")
     
-     
+    # Set OpenAI API key
+    os.environ["OPENAI_API_KEY"] = "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"
+    
     # File uploader for data
     uploaded_file = st.file_uploader("Upload your CSV file", type=["csv"])
     
@@ -51,28 +52,6 @@ def main():
             visualize_all_columns(data)
             st.write(data)
         
-        # with tab3:
-        #     st.subheader("Train a Machine Learning Model")
-        #     target_column = st.selectbox("Select Target Column", data.columns)
-        #     model = None
-        #     accuracy = None
-        #     if st.button("Train Model"):
-        #         # Preprocess data to handle non-numeric values
-        #         X, y = preprocess_data(data, target_column)
-                
-        #         # Check if target column is numeric
-        #         if not pd.api.types.is_numeric_dtype(y):
-        #             st.error("Target column must be numeric.")
-        #         else:
-        #             model, accuracy = train_model(X, y)
-        #             st.write(f"Model Accuracy: {accuracy}")
-        
-        # with tab4:
-        #     st.subheader("OD Flag Details")
-        #     od_flag_details = data[data['Account_Balance'] < 0][['Customer_ID', 'Account_Balance']]
-        #     od_flag_details['OD_Flag'] = 'Yes'
-        #     st.write(od_flag_details)
-        
         with tab3:
             st.subheader("Query Customer Details")
             query_column = st.selectbox("Select Column to Query", data.columns)
@@ -88,7 +67,7 @@ def main():
                 generate_charts(data)
                 
                 # Generate report
-                report = generate_report(summary, accuracy, od_flag_details)
+                report = generate_report(summary, None, None)
                 st.write(report)
                 
                 # Display charts
