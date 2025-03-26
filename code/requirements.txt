@@ -1,4 +1,8 @@
-OpenAI
-scikit-learn
-langchain
 streamlit
+pandas
+matplotlib
+seaborn
+langchain
+scikit-learn
+generate_report
+openai==0.28
