@@ -18,7 +18,7 @@ A brief overview of your project and its purpose. Mention which problem statemen
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+📹 [Video Demo](https://github.com/ewfx/gaidp-tech-thinkers/blob/main/artifacts/demo/Recording%202025-03-26%20202621.mp4) (if applicable)  
 🖼️ Screenshots
 
 ![Screenshot 1](link-to-image)
