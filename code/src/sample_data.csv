@@ -1,0 +1,4 @@
+Identifier Type,Identifier Value,Amortized Cost (USD Equivalent),Market Value ,Accounting Intent ,Type of Hedge(s),Hedged Risk,Hedge Interest Rate,Hedge Percentage,Hedge Horizon,Hedged Cash Flow,Sidedness,Hedging Instrument at Fair Value,Effective Portion of Cumulative Gains and Losses,ASU 2017-12 Hedge Designations
+CUSIP,123456789,1000000,1050000,AFS,1,2,1,0.75,31-12-2025,1,1,50000,20000,1
+ISIN,US1234567890,2000000,2100000,HTM,2,3,2,0.5,30-06-2026,2,2,100000,50000,2
+CUSIP,987654321,1500000,1550000,EQ,1,4,3,1,15-03-2027,3,1,75000,30000,3

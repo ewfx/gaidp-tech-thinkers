@@ -1,0 +1,52 @@
+body {
+    background-color: #f0f2f6;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+.stButton>button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.stButton>button:hover {
+    background-color: #45a049;
+}
+
+/* Custom styles for tabs */
+div[data-testid="stHorizontalBlock"] > div {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #4CAF50; /* Add border */
+}
+
+div[data-testid="stHorizontalBlock"] > div > div {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #4CAF50; /* Add border */
+}
+
+.st-emotion-cache-mtjnbi {
+    max-width: 96% !important;
+}
